@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>сажадаун</title>
+</head>
+
+<body>
+    <div id="vis1"></div>
+    <hr>
+    <div id="vis2"></div>
+    <script src="https://cdn.jsdelivr.net/npm/vega@latest" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@latest" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@latest" type="text/javascript"></script>
+    <script type="text/javascript">
+        var url = 'https://gist.githubusercontent.com/2636330/7e2ba8b33d155db9fe6acc50c7b3cb72/raw/a433bc077e314877cb490a3b2ff230290bcc08c0'
+        vegaEmbed('#vis1', url + '/hour.json');
+        vegaEmbed('#vis2', url + '/minute.json');
+    </script>
+</body>
+
+</html>
